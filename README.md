@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# Postit アプリ
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Postit アプリは、デジタル付箋（ポストイット）を作成、管理、整理できる動的でインタラクティブな React アプリケーションです。柔軟で直感的なインターフェースを提供します。
 
-## Available Scripts
+## 機能
 
-In the project directory, you can run:
+- ランダムな色で新しいポストイットを作成
+- リアルタイムでポストイットの内容を編集
+- グリッドビューでのドラッグアンドドロップ機能
+- ポストイットの削除
+- 色によるポストイットのフィルタリング
+- 作成日または更新日によるポストイットのソート
+- 内容によるポストイットの検索
+- グリッドビューとリストビューの切り替え
+- 総数と色の分布に関する統計情報の表示
 
-### `npm start`
+## インストール
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. リポジトリをクローンします：
+   ```
+   git clone https://github.com/yourusername/postit-app.git
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. プロジェクトディレクトリに移動します：
+   ```
+   cd postit-app
+   ```
 
-### `npm test`
+3. 依存関係をインストールします：
+   ```
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. 開発サーバーを起動します：
+   ```
+   npm start
+   ```
 
-### `npm run build`
+5. ブラウザで `http://localhost:3000` を開いてアプリを表示します。
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 使用方法
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- 「Add Postit」ボタンをクリックして新しいポストイットを作成します。
+- ポストイットをクリックしてドラッグすると、ボード上を移動できます（グリッドビューの場合）。
+- ポストイットのテキストエリアをクリックして内容を編集します。
+- サイドバーのコントロールを使用して、ポストイットのフィルタリング、ソート、検索を行います。
+- ビューボタンを使用してグリッドビューとリストビューを切り替えます。
+- 各ポストイットの「X」ボタンをクリックして削除します。
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 依存関係
 
-### `npm run eject`
+このプロジェクトは以下の主要な依存関係を使用しています：
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- React
+- Lucide React（アイコン用）
+- Tailwind CSS（スタイリング用）
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+完全な依存関係のリストは `package.json` ファイルを確認してください。
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## カスタマイズ
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+以下を変更することでアプリをカスタマイズできます：
 
-## Learn More
+- 色スキーム：`PostitApp.js` の `colors` 配列を編集して、利用可能なポストイットの色を変更します。
+- レイアウト：コンポーネントファイルの CSS クラスとスタイルを調整して、レイアウトと外観を変更します。
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 貢献
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+貢献を歓迎します！プルリクエストを自由に提出してください。
 
-### Code Splitting
+## ライセンス
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+このプロジェクトはオープンソースであり、[MIT ライセンス](LICENSE)の下で利用可能です。
 
-### Analyzing the Bundle Size
+## 連絡先
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+質問やフィードバックがある場合は、[あなたの名前](mailto:your.email@example.com)までご連絡ください。
